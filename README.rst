@@ -12,6 +12,7 @@ Quickstart
 
 *NOTE: This isn't 100% working just yet.*::
 
+    pip install -r requirements.txt
     docker-compose build
     docker-compose run server bash -c "cd .. && ./setup_game.sh"
     # TODO: chmod the game dir
