@@ -10,7 +10,8 @@ under Docker_ with docker-compose_.
 Quickstart
 ----------
 
-*NOTE: This isn't 100% working just yet.*::
+*NOTE: This isn't 100% working just yet.*
+::
 
     pip install -r requirements.txt
     docker-compose build
