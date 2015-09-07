@@ -27,6 +27,37 @@ Quickstart
     docker-compose up
     # Double CTRL+C when you want to stop it.
 
+After walking through this, you'll be able to reach your game at port 4000.
+If you are running on Linux, this will end up being localhost port 4000. If
+you are running Mac or Windows, you'll need to find the IP of your
+container VM (192.168.99.100 by default) and hit port 4000 on it.
+
+Similarly, the web interface is available on port 8000 by default.
+
+You'll also notice that you now have a ``game`` directory. Feel free to
+go nuts on anything in there as you would a normal install.
+
+How and When to re-build your Evennia Docker image
+--------------------------------------------------
+
+In our quickstart, we end up building a local Evennia image. You'll notice
+that changing things in the ``evennia`` doesn't lead to your changes being
+automatically applied to the game in your container.
+
+If you make any modifications to the ``evennia`` directory, be sure to
+rebuild your image like this::
+
+    docker-compose build
+
+After that, you can restart (or run) your container as usual and get the
+updates::
+
+    docker-compose up
+
+**NOTE: It is NOT necessary to rebuild your image if you change anything
+under ``game``. This directory is mounted as a volume. You only need
+restart the container to see your changes.**
+
 Legal
 -----
 
