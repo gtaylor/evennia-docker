@@ -1,11 +1,12 @@
 Evennia in Docker
 =================
 
-This repo has everything needed to get Evennia running quickly
+This repo has everything needed to get Evennia_ running quickly
 under Docker_ with docker-compose_.
 
 .. _Docker: https://www.docker.com/
 .. _docker-compose: https://docs.docker.com/compose/
+.. _Evennia: http://www.evennia.com/
 
 Quickstart
 ----------
