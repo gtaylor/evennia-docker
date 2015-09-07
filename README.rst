@@ -10,7 +10,7 @@ under Docker_ with docker-compose_.
 Quickstart
 ----------
 
-:: bash
+.. code:: bash
 
     # From within evennia-docker...
     # Slap your choice of evennia source in. We'll default to canonical.
