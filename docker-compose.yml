@@ -1,0 +1,15 @@
+server:
+  build: .
+  command: evennia start -i server
+  volumes:
+    - ./game:/opt/evennia-game/
+portal:
+  build: .
+  command: evennia start -i portal
+  links:
+    - server
+  volumes:
+    - ./game:/opt/evennia-game/
+  ports:
+    - 4000:4000
+    - 8000:8000
