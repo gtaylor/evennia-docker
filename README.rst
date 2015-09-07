@@ -10,7 +10,7 @@ under Docker_ with docker-compose_.
 Quickstart
 ----------
 
-::
+:: bash
 
     # From within evennia-docker...
     # Slap your choice of evennia source in. We'll default to canonical.
@@ -19,9 +19,8 @@ Quickstart
     pip install -r requirements.txt
     # This will build the Docker image.
     docker-compose build
-    # Creates your game directory, runs migrations, etc. At the end of this
-    # command, you'll have a running server (but no portal). CTRL+C out of
-    # this and continue.
+    # Creates your game directory, runs migrations, and sets a superuser
+    # up for yourself.
     docker-compose run server bash -c "cd .. && ./setup_game.sh"
     # TODO: chmod the game dir
     # This will bring up the server and the portal.
