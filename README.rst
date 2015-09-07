@@ -17,6 +17,7 @@ Quickstart
     docker-compose build
     docker-compose run server bash -c "cd .. && ./setup_game.sh"
     # TODO: chmod the game dir
+    docker-compose up
 
 Legal
 -----
